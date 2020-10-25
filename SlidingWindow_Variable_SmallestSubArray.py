@@ -1,3 +1,10 @@
+'''
+Problem: Given an array of positive numbers and a positive number ‘S’, 
+find the length of the smallest contiguous subarray whose sum is greater than or equal to ‘S’. Return 0, if no such subarray exists.
+Input: [2, 1, 5, 2, 3, 2], S=7 
+Output: 2
+Explanation: The smallest subarray with a sum great than or equal to '7' is [5, 2].
+'''
 import math
 def smallest_Subarray_with_Sum(arr,S):
     # Taking Start of sliding window and initial window sum with min_length
@@ -5,7 +12,7 @@ def smallest_Subarray_with_Sum(arr,S):
     window_start = 0
     min_length = math.inf
 
-    for window_end in range(0,len(arr)): # taking window end and creating slidin window
+    for window_end in range(len(arr)): # taking window end and creating slidin window
         window_sum += arr[window_end]    # adding eliment of sliding window
 
         while window_sum >= S: #Checking for Sum

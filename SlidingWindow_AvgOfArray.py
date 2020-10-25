@@ -12,9 +12,10 @@ def find_avg_ofarray(K, arr):
 # Time space is O(n * k)
 
 ##### Optimised Approach ########
-def find_avg_ofarray(K, arr):
+def find_avg_ofarray1(K, arr):
     result = []
-    windowStart = 0, windowSum = 0.0
+    window_start = 0
+    window_Sum = 0.0
     for windowEnd in range(len(arr)):
         windowSum += arr[windowEnd] # add the next element
         # slide the window, we don't need to alide if we have not hit the required window size of 'k'
