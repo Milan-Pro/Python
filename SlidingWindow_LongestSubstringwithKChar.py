@@ -34,6 +34,11 @@ def longest_substring_with_k_dist(str,k):
         max_length = max(max_length, window_end - window_start + 1)
     return max_length
 
+def main():
+    print("Length of the longest Substring:" + str(longest_substring_with_k_dist("araaci",2)))    
+    print("Length of the longest Substring:" + str(longest_substring_with_k_dist("araaci",1)))   
+    print("Length of the longest Substring:" + str(longest_substring_with_k_dist("cbbebi",3)))     
+main()
 '''
 Time Complexity #
 The time complexity of the above algorithm will be O(N) where ‘N’ is the number of characters in the input string.

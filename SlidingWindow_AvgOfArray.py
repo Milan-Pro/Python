@@ -16,13 +16,13 @@ def find_avg_ofarray1(K, arr):
     result = []
     window_start = 0
     window_Sum = 0.0
-    for windowEnd in range(len(arr)):
-        windowSum += arr[windowEnd] # add the next element
+    for window_End in range(len(arr)):
+        window_Sum += arr[window_End] # add the next element
         # slide the window, we don't need to alide if we have not hit the required window size of 'k'
-        if windowEnd >= K - 1:
-            result.append(windowSum / K) # Calculate the Average
-            windowSum -= arr[windowStart] # remove element going out
-            windowStart += 1 # slide the windw by 1
+        if window_End >= K - 1:
+            result.append(window_End / K) # Calculate the Average
+            window_Sum -= arr[window_start] # remove element going out
+            window_start += 1 # slide the windw by 1
     return result
 
 # Time Space is O(n)
