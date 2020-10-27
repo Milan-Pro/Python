@@ -8,7 +8,7 @@ class TreeNode:
         self.val = val
         self.left,self.right=left,right
 
-def min_depth(self,root:TreeNode) -> ListNode:
+def min_depth(self,root:TreeNode) -> List[int]:
     if root is None:
         return 0
 

@@ -13,7 +13,7 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 
-def reverseTraversal(self,root: TreeNode) -> ListNode:
+def reverseTraversal(self,root: TreeNode) -> List[int]:
     result = deque()
     if root is None:
         return result

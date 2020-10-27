@@ -14,7 +14,7 @@ class TreeNode:
         self.val = val
         self.left,self.right = None,None
 
-def find_level_avg(self,root: TreeNode) -> ListNode:
+def find_level_avg(self,root: TreeNode) -> List[int]:
     result = []
     if root is None:
         return result

@@ -13,7 +13,7 @@ class TreeNode:
         self.val = val
         self.left,self.right = None, None
 
-def traverse(self, root: TreeNode) -> ListNode:
+def traverse(self, root: TreeNode) -> List[int]:
     result = []
     if root is None:
         return result

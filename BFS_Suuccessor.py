@@ -13,7 +13,7 @@ class TreeNode:
         self.val = val
         self.right, self.left = None,None
 
-def find_successor(self,root:TreeNode,key):
+def find_successor(self,root:TreeNode,key)-> List[int]:
     if root is None:
         return None
     
